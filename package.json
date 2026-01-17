@@ -4,11 +4,36 @@
   "description": "Webhook signature verification utilities + Express middleware",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "vitest"
   },
-  "keywords": ["webhook", "shopify", "hmac", "signature", "express"],
-  "license": "MIT"
+  "keywords": [
+    "webhook",
+    "shopify",
+    "hmac",
+    "signature",
+    "express"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rakib-dev1/webhook-sign"
+  },
+  "peerDependencies": {
+    "express": ">=4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^20.19.30",
+    "@types/supertest": "^2.0.0",
+    "express": "^4.22.1",
+    "supertest": "^6.3.0",
+    "typescript": "^5.9.3",
+    "vitest": "^1.0.0"
+  }
 }
