@@ -1,0 +1,14 @@
+{
+  "name": "hook-sign",
+  "version": "1.0.0",
+  "description": "Webhook signature verification utilities + Express middleware",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["webhook", "shopify", "hmac", "signature", "express"],
+  "license": "MIT"
+}
